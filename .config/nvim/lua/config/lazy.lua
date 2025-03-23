@@ -62,6 +62,12 @@ require("lazy").setup({
         },
         }, 
         { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
+        -- lazy.nvim
+        {
+            "m4xshen/hardtime.nvim",
+            dependencies = { "MunifTanjim/nui.nvim" },
+            opts = {}
+        },
     },
         -- Configure any other settings here. See the documentation for more details.
         -- colorscheme that will be used when installing plugins.
