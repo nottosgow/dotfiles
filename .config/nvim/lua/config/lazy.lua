@@ -60,7 +60,7 @@ require("lazy").setup({
                 { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
             },
         },
-        }, 
+        },
         { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
         -- lazy.nvim
         {
