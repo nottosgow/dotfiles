@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
 
-# Easier navigation: .., ..., ...., ....., ~ and -
+# Easier navigation: ..
 alias ..="cd .."
-
-# Shortcuts
-alias g="git"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -45,3 +42,9 @@ alias path='echo -e ${PATH//:/\\n}'
 
 # make nv open neovim
 alias nv='nvim '
+
+# git aliases
+alias gd='git diff --output-indicator-new=" " --output-indicator-old=" " '
+alias ga='git add '
+alias gl='git log --graph --all --pretty=format:"%C(magenta)%h %C(white) %an  %ar%C(blue)  %D%n%s%n" '
+alias gs='git status --short'
